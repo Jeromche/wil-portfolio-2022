@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@types/node': ^17.0.41
   '@vitejs/plugin-vue': ^2.3.3
+  modern-normalize: ^1.1.0
   typescript: ^4.5.4
   vite: ^2.9.9
   vue: ^3.2.25
@@ -10,6 +11,7 @@ specifiers:
   vue-tsc: ^0.34.7
 
 dependencies:
+  modern-normalize: 1.1.0
   vue: 3.2.37
   vue-router: 4.0.15_vue@3.2.37
 
@@ -405,6 +407,11 @@ packages:
     resolution: {integrity: sha512-RmF0AsMzgt25qzqqLc1+MbHmhdx0ojF2Fvs4XnOqz2ZOBXzzkEwc/dJQZCYHAn7v1jbVOjAZfK8msRn4BxO4VQ==}
     dependencies:
       sourcemap-codec: 1.4.8
+
+  /modern-normalize/1.1.0:
+    resolution: {integrity: sha512-2lMlY1Yc1+CUy0gw4H95uNN7vjbpoED7NNRSBHE25nWfLBdmMzFCsPshlzbxHz+gYMcBEUN8V4pU16prcdPSgA==}
+    engines: {node: '>=6'}
+    dev: false
 
   /nanoid/3.3.4:
     resolution: {integrity: sha512-MqBkQh/OHTS2egovRtLk45wEyNXwF+cokD+1YPf9u5VfJiRdAiRwB2froX5Co9Rh20xs4siNPm8naNotSD6RBw==}
