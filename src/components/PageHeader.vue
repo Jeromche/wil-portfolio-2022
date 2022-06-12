@@ -32,18 +32,32 @@ ul {
   gap: 40px;
   font-size: 20px;
   line-height: 1;
+  transform: translateY(4px);
 }
 
 a {
   display: inline-block;
   color: white;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
   transition: border-bottom-color .1s linear;
+  position: relative;
 }
 
-a:hover {
-  border-bottom: 2px solid white;
+a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  background-color: white;
+  transform: translateY(6px);
+  transition: width .2s ease-out;
+}
+
+a:hover::after {
+  width: 100%;
 }
 
 figure {
