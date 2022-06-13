@@ -6,33 +6,31 @@
       <li><a href="#">Hire me</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
-    <figure>
-      <img src="/src/assets/avatar.jpg" />
-    </figure>
+    <div class="avatar">
+      <figure>
+        <img src="/src/assets/avatar.jpg" />
+      </figure>
+    </div>
   </header>
 </template>
 
 <style scoped>
 header {
   display: flex;
-  flex-direction: row;
-  place-items: center;
-  gap: 40px;
+  align-items: center;
 }
 
 h1 {
   font-family: 'Permanent Marker', cursive;
-  font-size: 32px;
-  flex-grow: 1;
 }
 
 ul {
+  --underline-height: 4px;
+
   display: flex;
   flex-direction: row;
-  gap: 40px;
-  font-size: 20px;
   line-height: 1;
-  transform: translateY(4px);
+  transform: translateY(var(--underline-height));
 }
 
 a {
@@ -46,11 +44,10 @@ a {
 a::after {
   content: '';
   position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  inset: 0;
+  top: unset;
   width: 0;
-  height: 4px;
+  height: var(--underline-height);
   background-color: white;
   transform: translateY(6px);
   transition: width .2s ease-out;
@@ -60,11 +57,62 @@ a:hover::after {
   width: 100%;
 }
 
+.avatar {
+  order: 1;
+}
+
 figure {
   width: 60px;
   height: 60px;
   border-radius: 50%;
   overflow: hidden;
   border: 1px solid #808080;
+}
+
+@media (max-width: 799px) {
+  header {
+    flex-direction: column;
+    place-items: center;
+    gap: 16px;
+    align-self: center;
+    max-width: 320px;
+  }
+
+  h1 {
+    font-size: 24px;
+    order: 2;
+  }
+
+  ul {
+    order: 3;
+    align-self: stretch;
+    justify-content: space-between;
+    font-size: 14px;
+  }
+
+  .avatar {}
+}
+
+@media (min-width: 800px) {
+  header {
+    flex-direction: row;
+    gap: 40px;
+  }
+
+  h1 {
+    order: 1;
+    flex-grow: 1;
+    font-size: 32px;
+  }
+
+  ul {
+    order: 2;
+    font-size: 20px;
+    gap: 40px;
+  }
+
+  .avatar {
+    order: 3;
+  }
 }
 </style>

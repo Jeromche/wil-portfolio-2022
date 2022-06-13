@@ -39,9 +39,9 @@ p {
 
 .cta {
   display: flex;
-  flex-direction: row;
-  gap: 40px;
+  flex-direction: column;
   align-items: center;
+  gap: 16px;
 }
 
 .cta a {
@@ -77,5 +77,12 @@ p {
 
 .text {
   font-size: 24px;
+}
+
+@media (min-width: 600px) {
+  .cta {
+    flex-direction: row;
+    gap: 40px;
+  }
 }
 </style>
