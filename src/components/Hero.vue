@@ -1,7 +1,14 @@
+<script setup lang="ts">
+import TitleSlide from '@/components/TitleSlide.vue'
+</script>
+
 <template>
   <section>
     <div class="hero">
-      <h2>Wil here, creative web developer and taco connoiseur 🌮</h2>
+      <h2 class="desktop">
+        <title-slide line="Wil here, creative web developer" />
+        <title-slide line="and taco connoiseur 🌮" />
+      </h2>
       <p>I love connecting companies with their customers through perfectly implemented, accessible and easy to use web
         interfaces.</p>
     </div>
@@ -27,14 +34,15 @@ section {
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 1.3;
+  font-size: 24px;
   font-weight: 700;
+  line-height: 1.3;
 }
 
 p {
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .cta {
@@ -79,10 +87,20 @@ p {
   font-size: 24px;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .cta {
     flex-direction: row;
     gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 24px;
   }
 }
 </style>

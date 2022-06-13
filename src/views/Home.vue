@@ -1,4 +1,4 @@
-<script lang="ts" setup>
+<script setup lang="ts">
 import Animation from '../components/Animation.vue';
 import PageHeader from "@/components/PageHeader.vue"
 import Hero from '@/components/Hero.vue';

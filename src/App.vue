@@ -17,8 +17,20 @@ body {
 #app {
   display: flex;
   flex-direction: column;
-  gap: 400px;
+  gap: 64px;
   max-width: 1080px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  #app {
+    gap: 200px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #app {
+    gap: 400px;
+  }
 }
 </style>

@@ -15,6 +15,16 @@
 </template>
 
 <style scoped>
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 header {
   display: flex;
   align-items: center;
@@ -57,6 +67,12 @@ a:hover::after {
   width: 100%;
 }
 
+a:focus::after {
+  width: 100%;
+  animation: blink .25s linear;
+  animation-iteration-count: 3;
+}
+
 .avatar {
   order: 1;
 }
@@ -69,7 +85,7 @@ figure {
   border: 1px solid #808080;
 }
 
-@media (max-width: 799px) {
+@media (max-width: 767px) {
   header {
     flex-direction: column;
     place-items: center;
@@ -89,11 +105,9 @@ figure {
     justify-content: space-between;
     font-size: 14px;
   }
-
-  .avatar {}
 }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   header {
     flex-direction: row;
     gap: 40px;

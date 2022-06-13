@@ -14,10 +14,10 @@
 }
 
 .animation {
-  --size: 500px;
+  --size: 700px;
 
-  position: absolute;
-  top: 100px;
+  position: fixed;
+  top: 200px;
   left: 50%;
   transform: translateX(600px);
   width: var(--size);
