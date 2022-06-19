@@ -25,7 +25,7 @@ defineProps<Props>()
   }
 
   100% {
-    transform: transform(0);
+    transform: translateY(0);
   }
 }
 
@@ -37,6 +37,6 @@ defineProps<Props>()
 
 .inner {
   display: block;
-  animation: slide-up 3s cubic-bezier(0, 0.8, 0.2, 1);
+  animation: slide-up 1s cubic-bezier(0, 0.8, 0.2, 1);
 }
 </style>

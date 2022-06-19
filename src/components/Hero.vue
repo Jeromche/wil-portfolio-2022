@@ -68,14 +68,16 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: all .15s linear;
-  box-shadow: 0 4px 1px transparent;
+  box-shadow: 0 4px 1px hsl(243, 62%, 0, 0);
+  text-shadow: 1px 2px 0px transparent;
+  background-image: linear-gradient(hsl(243, 100%, 66%), hsl(243, 65%, 55%));
 }
 
 .button:hover {
-  background-image: linear-gradient(hsl(243, 100%, 66%), hsl(243, 65%, 55%));
-  box-shadow: 0 4px 1px hsl(243deg 61% 42%);
-  text-shadow: 1px 2px 0px hsl(243deg 61% 50%);
-  transform: translateY(-1px);
+  box-shadow: 0 4px 1px hsl(243, 61%, 42%);
+  text-shadow: 1px 2px 0px hsl(243, 61%, 50%);
+  /* transform: translateY(-1px); */
+  transition: all .05s linear;
 }
 
 .button:active {

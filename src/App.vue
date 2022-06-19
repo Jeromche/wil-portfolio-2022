@@ -30,7 +30,7 @@ body {
 
 @media (min-width: 1024px) {
   #app {
-    gap: 400px;
+    gap: 320px;
   }
 }
 </style>
