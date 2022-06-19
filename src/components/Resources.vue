@@ -9,7 +9,9 @@ import ResourceItem from './ResourceItem.vue';
       <div class="content">
         <p>Every now and again I create components or widgets on Codepen to experiment how I would make something, to
           learn how to create the best version or just to pass the time.</p>
-        <p>Here is a short list of what I've been making. Feel free to copy and use any of it in your own projects.</p>
+        <p>Here is a selection list of what I've been up to lately. Feel free to copy and use any of it in your own
+          projects.
+        </p>
       </div>
       <div class="items">
         <ResourceItem />
@@ -39,14 +41,15 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: 464px 1fr;
-  gap: 136px;
+  grid-template-columns: 1fr 1fr;
+  gap: 36px;
 }
 
 .content {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  padding-right: 100px;
 }
 
 .content p {
