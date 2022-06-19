@@ -4,7 +4,7 @@
     <ul>
       <li><a href="#">About</a></li>
       <li><a href="#">Hire me</a></li>
-      <li><a href="#">Contact</a></li>
+      <li><a href="mailto:wil@vandertuin.nl">Email</a></li>
     </ul>
     <div class="avatar">
       <figure>
