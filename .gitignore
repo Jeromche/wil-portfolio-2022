@@ -25,3 +25,4 @@ dist-ssr
 
 # Misc incoming folder
 Incoming
+.env
