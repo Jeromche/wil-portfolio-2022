@@ -1,13 +1,11 @@
 <template>
   <section>
-    <h2>Resources</h2>
+    <h2>About me</h2>
     <div class="container">
       <div class="content">
-        <p>Every now and again I create components or widgets on Codepen to experiment how I would make something, to
-          learn how to create the best version or just to pass the time.</p>
-        <p>Here is a selection list of what I've been up to lately. Feel free to copy and use any of it in your own
-          projects.
-        </p>
+        <p>I was born in The Netherlands in the eighties. Ever since I was young kid I was interested in computers and I
+          always knew I was going to be a programmer. In my teens I learned how to create websites with HTML and when I
+          was 18 years old I started my first job at a local web agency and I've been slinging code ever since.</p>
       </div>
       <div class="items" />
     </div>

@@ -9,8 +9,8 @@ import TitleSlide from '@/components/TitleSlide.vue'
         <title-slide line="Wil here, creative web developer" />
         <title-slide line="and taco connoiseur 🌮" />
       </h2>
-      <p>I love connecting companies with their customers through perfectly implemented, accessible and easy to use web
-        interfaces.</p>
+      <p>It love connecting companies with their customers through perfectly
+        implemented, accessible and easy to use websites.</p>
     </div>
     <div class="cta">
       <a class="button" href="#">Download CV</a>

@@ -4,6 +4,7 @@ import PageHeader from "@/components/PageHeader.vue"
 import Hero from '@/components/Hero.vue';
 import RecentWork from '@/components/RecentWork.vue';
 import Resources from '@/components/Resources.vue';
+import AboutMe from '@/components/AboutMe.vue';
 </script>
 
 <template>
@@ -12,4 +13,5 @@ import Resources from '@/components/Resources.vue';
   <Hero />
   <RecentWork />
   <Resources />
+  <AboutMe />
 </template>
