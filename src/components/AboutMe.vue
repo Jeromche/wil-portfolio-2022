@@ -3,9 +3,10 @@
     <h2>About me</h2>
     <div class="container">
       <div class="content">
-        <p>I was born in The Netherlands in the eighties. Ever since I was young kid I was interested in computers and I
-          always knew I was going to be a programmer. In my teens I learned how to create websites with HTML and when I
-          was 18 years old I started my first job at a local web agency and I've been slinging code ever since.</p>
+        <p>I am a T-shaped engineer with strong expertise in the web platform (site optimization, accessibility,
+          useability) with Vuejs and React. Besides my specialty as a UI engineer I have experience in multiple
+          supporting areas such as infrastructure, database design, Node backend, marketing, A/B testing, UI wireframing
+          and design.</p>
       </div>
       <div class="items" />
     </div>
