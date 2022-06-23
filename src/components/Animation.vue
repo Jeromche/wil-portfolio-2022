@@ -17,9 +17,8 @@
 
 .container {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  inset: 0;
+  bottom: unset;
   height: 1200px;
   overflow: hidden;
   z-index: -1;
