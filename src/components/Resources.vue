@@ -41,7 +41,7 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
   gap: 36px;
 }
 
@@ -58,7 +58,21 @@ h2 {
 
 .items {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto;
   gap: 36px;
+}
+
+@media (min-width: 520px) {
+  .items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    row-gap: 104px;
+  }
 }
 </style>

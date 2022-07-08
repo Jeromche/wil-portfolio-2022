@@ -40,8 +40,15 @@ h2 {
 
 .container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 36px;
-  row-gap: 104px;
+  grid-template-columns: auto;
+  row-gap: 64px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 36px;
+    row-gap: 104px;
+  }
 }
 </style>
