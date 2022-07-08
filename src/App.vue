@@ -13,24 +13,4 @@ body {
   padding-inline: 40px;
   padding-block: 60px;
 }
-
-#app {
-  display: flex;
-  flex-direction: column;
-  gap: 64px;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  #app {
-    gap: 200px;
-  }
-}
-
-@media (min-width: 1024px) {
-  #app {
-    gap: 320px;
-  }
-}
 </style>
