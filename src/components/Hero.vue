@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import TitleSlide from '@/components/TitleSlide.vue'
+
+const onMouseMove = ({ pageX, pageY, target }: MouseEvent) => {
+  if (target === null) return;
+  const element = target as HTMLElement;
+  element.style.setProperty("--x", `${pageX - element.offsetLeft}px`);
+  element.style.setProperty("--y", `${pageY - element.offsetTop}px`);
+};
 </script>
 
 <template>
@@ -9,11 +16,11 @@ import TitleSlide from '@/components/TitleSlide.vue'
         <title-slide line="Wil here, creative web developer" />
         <title-slide line="and taco connoiseur 🌮" />
       </h2>
-      <p>It love connecting companies with their customers through perfectly
-        implemented, accessible and easy to use websites.</p>
+      <p>It love connecting companies with their customers through perfectly implemented, accessible and easy to use
+        websites.</p>
     </div>
     <div class="cta">
-      <a class="button" href="#">Download CV</a>
+      <a class="button" href="#" @mousemove="onMouseMove"><span>Download CV</span></a>
       <a class="text" href="mailto:wil@vandertuin.nl">wil@vandertuin.nl</a>
     </div>
   </section>
@@ -68,21 +75,36 @@ p {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   transition: all .15s linear;
-  box-shadow: 0 4px 1px hsl(243, 62%, 0, 0);
-  text-shadow: 1px 2px 0px transparent;
   background-image: linear-gradient(hsl(243, 100%, 66%), hsl(243, 65%, 55%));
-}
-
-.button:hover {
   box-shadow: 0 4px 1px hsl(243, 61%, 42%);
   text-shadow: 1px 2px 0px hsl(243, 61%, 50%);
-  /* transform: translateY(-1px); */
   transition: all .05s linear;
+  overflow: hidden;
+  position: relative;
 }
 
 .button:active {
   transform: translateY(1px);
   box-shadow: 0 2px 0px hsl(243deg 61% 42%);
+}
+
+.button span {
+  position: relative;
+  pointer-events: none;
+}
+
+.button::before {
+  --size: 350px;
+
+  left: var(--x, 50%);
+  top: var(--y, 50%);
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, hsla(243, 57%, 50%, 1), transparent);
+  transform: translate(-50%, -50%);
 }
 
 .text {

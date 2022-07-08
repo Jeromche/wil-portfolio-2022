@@ -41,3 +41,7 @@ embed,
 object {
   display: block;
 }
+
+a {
+  color: inherit;
+}

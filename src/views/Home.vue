@@ -7,6 +7,7 @@ import Hero from '@/components/Hero.vue';
 import RecentWork from '@/components/RecentWork.vue';
 import Resources from '@/components/Resources.vue';
 import AboutMe from '@/components/AboutMe.vue';
+
 </script>
 
 <template>
